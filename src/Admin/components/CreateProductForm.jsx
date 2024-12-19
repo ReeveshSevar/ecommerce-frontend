@@ -80,8 +80,6 @@ const CreateProductForm = () => {
     thirdLevelCategory: ""
   });
 
-  const [errorMessage, setErrorMessage] = useState("");
-
   const dispatch = useDispatch();
 
   // Handle input change
@@ -132,15 +130,7 @@ const CreateProductForm = () => {
   const handleImageChange = (e) => {
     const file = e.target.files[0];
 
-    if (file) {
-      // Check the file size (in bytes), if it's larger than 100 KB (100 * 1024 bytes)
-      if (file.size > 100 * 1024) {
-        setErrorMessage("File size should not exceed 100 KB.");
-        return; // Exit the function if the file is too large
-      } else {
-        setErrorMessage(""); // Clear error if file size is valid
-      }
-
+    if (file) {      
       const reader = new FileReader();
       reader.onloadend = () => {
         const base64Image = reader.result; // The base64 encoded image
