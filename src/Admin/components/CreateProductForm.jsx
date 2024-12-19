@@ -220,12 +220,7 @@ const CreateProductForm = () => {
               >
                 Upload Product Image
               </Button>
-            </label>
-            {errorMessage && (
-              <Typography color="error" variant="body2" sx={{ marginTop: '8px' }}>
-                {errorMessage}
-              </Typography>
-            )}
+            </label>           
           </Grid>
           {/* Brand */}
           <Grid item xs={12} sm={6}>
