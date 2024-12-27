@@ -30,8 +30,8 @@ const HomeSectionCarousel = ({ data, sectionName }) => {
     };
 
     return (
-        <div className="relative border rounded-lg shadow-lg p-2 bg-gradient-to-br from-blue-50 via-pink-50 to-green-50">
-             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 text-center mb-6 transition-all duration-300 transform hover:text-pink-400 hover:scale-105">
+         <div className="relative border rounded-lg shadow-lg p-2 bg-gradient-to-r from-blue-100 via-lime-100 to-pink-100">
+            <h2 className="text-3xl md:text-2xl lg:text-3xl font-extrabold text-gray-800 text-center mb-2 transition-all duration-300 transform hover:text-pink-400 hover:scale-105">
                 {sectionName.charAt(0).toUpperCase() + sectionName.slice(1)} {/* Capitalize first letter */}
             </h2>
             <div className="relative">
