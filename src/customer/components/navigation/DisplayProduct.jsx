@@ -54,7 +54,7 @@ const DisplayProduct = ({ product }) => {
     return (
         <div className="flex">
             {/* Filter Section */}
-            <div className="filter-section h-[88vh] w-full sm:w-1/4 p-2 bg-gradient-to-r from-indigo-100 via-blue-100 to-green-100 rounded-lg shadow-lg">
+            <div className="filter-section h-[88vh] w-full sm:w-1/4 p-2 bg-gradient-to-r from-indigo-100 via-blue-100 to-green-100 rounded-lg shadow-lg sticky top-2">
                 <h3 className="font-semibold text-gray-700 mb-2 text-sm">Filters</h3>
 
                 {/* Color Filter */}
